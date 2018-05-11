@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9241294520A5448B0094EFFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9241294420A5448B0094EFFE /* UIKit.framework */; };
+		924D855920A53E5D00DF7899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924D855820A53E5D00DF7899 /* Foundation.framework */; };
+		924D856320A53E5D00DF7899 /* xiaoheiheLib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 924D856220A53E5D00DF7899 /* xiaoheiheLib.mm */; };
+		924D856F20A53F1D00DF7899 /* AdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 924D856D20A53F1D00DF7899 /* AdView.h */; };
+		924D857020A53F1D00DF7899 /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 924D856E20A53F1D00DF7899 /* AdView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9241294420A5448B0094EFFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		924D855520A53E5D00DF7899 /* xiaoheiheLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = xiaoheiheLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		924D855820A53E5D00DF7899 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		924D855D20A53E5D00DF7899 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		924D855E20A53E5D00DF7899 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		924D856020A53E5D00DF7899 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		924D856120A53E5D00DF7899 /* xiaoheiheLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xiaoheiheLib-Prefix.pch"; sourceTree = "<group>"; };
+		924D856220A53E5D00DF7899 /* xiaoheiheLib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = xiaoheiheLib.mm; sourceTree = "<group>"; };
+		924D856720A53E5D00DF7899 /* xiaoheiheLib.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = xiaoheiheLib.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/xiaoheiheLib.plist; sourceTree = "<group>"; };
+		924D856D20A53F1D00DF7899 /* AdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
+		924D856E20A53F1D00DF7899 /* AdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924D855120A53E5D00DF7899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9241294520A5448B0094EFFE /* UIKit.framework in Frameworks */,
+				924D855920A53E5D00DF7899 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		924D854B20A53E5D00DF7899 = {
+			isa = PBXGroup;
+			children = (
+				924D855A20A53E5D00DF7899 /* xiaoheiheLib */,
+				924D855720A53E5D00DF7899 /* Frameworks */,
+				924D855620A53E5D00DF7899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		924D855620A53E5D00DF7899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924D855520A53E5D00DF7899 /* xiaoheiheLib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924D855720A53E5D00DF7899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9241294420A5448B0094EFFE /* UIKit.framework */,
+				924D855820A53E5D00DF7899 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		924D855A20A53E5D00DF7899 /* xiaoheiheLib */ = {
+			isa = PBXGroup;
+			children = (
+				924D856220A53E5D00DF7899 /* xiaoheiheLib.mm */,
+				924D856D20A53F1D00DF7899 /* AdView.h */,
+				924D856E20A53F1D00DF7899 /* AdView.m */,
+				924D855B20A53E5D00DF7899 /* Package */,
+				924D855F20A53E5D00DF7899 /* Supporting Files */,
+			);
+			path = xiaoheiheLib;
+			sourceTree = "<group>";
+		};
+		924D855B20A53E5D00DF7899 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				924D855C20A53E5D00DF7899 /* DEBIAN */,
+				924D856420A53E5D00DF7899 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		924D855C20A53E5D00DF7899 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				924D855D20A53E5D00DF7899 /* control.txt */,
+				924D855E20A53E5D00DF7899 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		924D855F20A53E5D00DF7899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				924D856020A53E5D00DF7899 /* PackageVersion.plist */,
+				924D856120A53E5D00DF7899 /* xiaoheiheLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		924D856420A53E5D00DF7899 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				924D856520A53E5D00DF7899 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		924D856520A53E5D00DF7899 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				924D856620A53E5D00DF7899 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		924D856620A53E5D00DF7899 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				924D856720A53E5D00DF7899 /* xiaoheiheLib.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		924D855220A53E5D00DF7899 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924D856F20A53F1D00DF7899 /* AdView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		924D855420A53E5D00DF7899 /* xiaoheiheLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924D856A20A53E5D00DF7899 /* Build configuration list for PBXNativeTarget "xiaoheiheLib" */;
+			buildPhases = (
+				924D855020A53E5D00DF7899 /* Sources */,
+				924D855120A53E5D00DF7899 /* Frameworks */,
+				924D855220A53E5D00DF7899 /* Headers */,
+				924D855320A53E5D00DF7899 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xiaoheiheLib;
+			productName = xiaoheiheLib;
+			productReference = 924D855520A53E5D00DF7899 /* xiaoheiheLib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		924D854C20A53E5D00DF7899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					924D855420A53E5D00DF7899 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 924D854F20A53E5D00DF7899 /* Build configuration list for PBXProject "xiaoheiheLib" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 924D854B20A53E5D00DF7899;
+			productRefGroup = 924D855620A53E5D00DF7899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				924D855420A53E5D00DF7899 /* xiaoheiheLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		924D855320A53E5D00DF7899 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924D855020A53E5D00DF7899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924D856320A53E5D00DF7899 /* xiaoheiheLib.mm in Sources */,
+				924D857020A53F1D00DF7899 /* AdView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		924D856820A53E5D00DF7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		924D856920A53E5D00DF7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		924D856B20A53E5D00DF7899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xiaoheiheLib/xiaoheiheLib-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		924D856C20A53E5D00DF7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xiaoheiheLib/xiaoheiheLib-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		924D854F20A53E5D00DF7899 /* Build configuration list for PBXProject "xiaoheiheLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924D856820A53E5D00DF7899 /* Debug */,
+				924D856920A53E5D00DF7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924D856A20A53E5D00DF7899 /* Build configuration list for PBXNativeTarget "xiaoheiheLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924D856B20A53E5D00DF7899 /* Debug */,
+				924D856C20A53E5D00DF7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 924D854C20A53E5D00DF7899 /* Project object */;
+}

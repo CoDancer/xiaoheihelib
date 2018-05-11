@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'xiaoheiheLib' target in the 'xiaoheiheLib' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
